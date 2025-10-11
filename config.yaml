@@ -1,0 +1,16 @@
+name: "Anisette Home Assistant"
+description: "An Anisette 3 server that can run from home assistant, making it easier to add custom Apple FindMy trackers."
+version: "0.0.1"
+slug: "anisette_home_assistant"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+ports:
+  8000/tcp: 8000
+url: https://github.com/t4stypi/anisette-v3-server-home-assistant
+webui: http://[HOST]:[PORT:8000]
