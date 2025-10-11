@@ -31,4 +31,6 @@ RUN useradd -ms /bin/bash Alcoholic \
 # Run the artefact
 USER Alcoholic
 EXPOSE 6969
-ENTRYPOINT [ "/opt/anisette-v3-server" ]
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s \
+  CMD curl -fs http://localhost:6969/ || exit 1
+CMD [ "/opt/anisette-v3-server" ]
