@@ -11,6 +11,6 @@ arch:
   - i386
 startup: services
 ports:
-  8000/tcp: 8000
+  6969/tcp: 6969
 url: https://github.com/t4stypi/anisette-v3-server-home-assistant
 webui: http://[HOST]:[PORT:8000]
