@@ -13,4 +13,4 @@ startup: services
 ports:
   6969/tcp: 6969
 url: https://github.com/t4stypi/anisette-v3-server-home-assistant
-webui: http://[HOST]:[PORT:8000]
+webui: http://[HOST]:[PORT:6969]
