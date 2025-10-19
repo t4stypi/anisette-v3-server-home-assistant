@@ -4,7 +4,7 @@ version: "0.0.1"
 slug: "anisette_home_assistant"
 init: false
 arch:
-  - aarch64
+  - aarch64 
   - amd64
   - armhf
   - armv7
@@ -12,5 +12,5 @@ arch:
 startup: services
 ports:
   6969/tcp: 6969
-url: https://github.com/t4stypi/anisette-v3-server-home-assistant
-webui: http://[HOST]:[PORT:6969]
+webui: "http://[HOST]:[PORT:6969]"
+url: "https://github.com/t4stypi/anisette-v3-server-home-assistant"
